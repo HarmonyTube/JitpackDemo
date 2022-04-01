@@ -1,0 +1,2 @@
+include ':app',':kftextviewlibrary'
+rootProject.name='JitpackDemo'

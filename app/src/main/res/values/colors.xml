@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#88B246</color>
+    <color name="colorPrimaryDark">#88B246</color>
+    <color name="colorAccent">#88B246</color>
+
+    <color name="colorTheme">#88B246</color>-->
+
+
+    <color name="colorPrimary">#439855</color>
+    <color name="colorPrimaryDark">#439855</color>
+    <color name="colorAccent">#439855</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="colorTheme">#439855</color>
+
+    <color name="main_color">#439855</color>
+    <color name="title_color">#439855</color>
+    <color name="main_bankground_color">#F0F0F0</color>
+
+
+
+
+    <color name="blue111">#7D7DFF</color>
+    <color name="red111">#ff0000</color>
+    <color name="green11">#ff99cc00</color>
+    <color name="yellow111">#fbd415</color>
+    <color name="material_grey_350">#D0D0D0</color>
+    <color name="white">#FAFFFFFF</color>
+
+
+    <color name="copyright_text_color">#ADADAD</color>
+    <!--<color name="copyright_text_color">#BABABA</color>-->
+    <!--<color name="copyright_text_color">#B1000000</color>-->
+
+    <color name="gray_line">#ababab</color>
+    <color name="navigationBarColor">#FAFFFFFF</color>
+
+
+    <!--底部导航栏标题选中颜色-->
+    <!--默认颜色-->
+    <color name="nav_title_color">#00A0FF</color>
+    <!--首页-->
+    <color name="nav_home_title_color">#FFC13B</color>
+    <!--分类-->
+    <color name="nav_category_title_color">#8A8BF2</color>
+    <!--我的-->
+    <color name="nav_mine_title_color">#00A0FF</color>
+    <!--底部导航栏标题未选中颜色-->
+    <color name="nav_title_color_normal">#B1000000</color>
+    <color name="nav_bankground_color">#FAFFFFFF</color>
+
+
+    <color name="dark_black">#111111</color>
+
+
+
+    <color name="dark_blue">#242B38</color>
+    <!--标题颜色 E0E4EB-->
+
+
+    <color name="dark_gray">#1F2229</color>
+    <color name="dark_purple">#313142</color>
+
+    <color name="light_white">#FFFFFF</color>
+    <color name="light_blue">#F8F9FA</color>
+
+    <!--横线 #E5ECF4 三像素 -->
+    <color name="light_gray">#F5F5F5</color>
+    <color name="light_purple">#F9F8FA</color>
+
+
+    <color name="black">#000000</color>
+    <color name="blue">#6E9BEA</color>
+    <color name="blueGray">#7493A2</color>
+    <color name="blueGray1">#607D8B</color>
+
+    <color name="brown">#9C7162</color>
+    <color name="brown1">#795548</color>
+    <color name="gray">#ACACB0</color>
+    <color name="gray1">#A4A4A8</color>
+    <color name="green">#69DF73</color>
+    <color name="green1">#2ECE45</color>
+    <color name="lightRed">#FF6E64</color>
+    <color name="lightRed1">#FF665C</color>
+
+
+
+    <!--
+        DEFAULT_DARK_THEME='dark-gray',e.DEFAULT_LIGHT_THEME='light-white'
+    -->
+
+
+    {black:'#000000',blue:t?'#6E9BEA':'#3666B9',blueGray:t?'#7493A2':'#607D8B',brown:t?'#9C7162':'#795548',gray:t?'#ACACB0':'#A4A4A8'
+    ,green:t?'#69DF73':'#2ECE45',lightRed:t?'#FF6E64':'#',orange:t?'#FFB251':'#FFAA4D',pink:t?'#FF6496':'#FF5C91',purple:t?'#A772Ef':'#562992',red:t?'#DE4A40':'#FF3F34',transparent:'transparent',teal:t?'#49D3B4':'#43C3A7',white:'#FFFFFF',yellow:t?'#FFDE57':'#F1CC52'}}},506,[])
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CountdownView">
+        <attr name="text" format="string" />
+        <attr name="text_color" format="string" />
+        <attr name="text_size" format="dimension" />
+        <attr name="update_time" format="integer" />
+        <attr name="total_time" format="integer" />
+        <attr name="progress_color" format="color" />
+        <attr name="progress_width" format="dimension" />
+        <attr name="progress_hint_color" format="color" />
+        <attr name="bg_color" format="color|reference" />
+    </declare-styleable>
+
+<!--
+    <declare-styleable name="KFTextView">
+        &lt;!&ndash;<attr name="text" format="string" />
+        <attr name="text_color" format="string" />
+        <attr name="text_size" format="dimension" />
+        <attr name="update_time" format="integer" />
+        <attr name="total_time" format="integer" />
+        <attr name="progress_color" format="color" />
+        <attr name="progress_width" format="dimension" />
+        <attr name="progress_hint_color" format="color" />
+        <attr name="bg_color" format="color|reference" />&ndash;&gt;
+
+
+        <attr name="kftv_font" format="string"/>
+        &lt;!&ndash;<attr name="kftv_font" format="string">
+            <enum name="HanSansNormal" value="font/SourceHanSansCN-Normal.otf"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+            <enum name="left" value="4"/>
+        </attr>&ndash;&gt;
+    </declare-styleable>
+-->
+
+    <attr name="icon_color" format="color|reference"/>
+    <attr name="title_color" format="color|reference"/>
+</resources>

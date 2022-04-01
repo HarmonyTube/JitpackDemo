@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Kungfu</string>
+
+    <string name="home">首页</string>
+    <string name="classification">分类</string>
+    <string name="topic">话题</string>
+    <string name="mine">我的</string>
+
+    <!-- <string name="copyright">四川农信版权所有\u00a9 2020</string>-->
+    <!--<string name="copyright">\u00a91992-2020 Mogu All Rights Reserved </string>-->
+    <!--<string name="copyright">\u00a91992-2020 SCRCU All Rights Reserved </string>-->
+    <!--Copyright 版权标记符 2017-2018 MUSHINY-->
+    <string name="copyright">Copyright&#160;&#160;\u00a9&#160;1992-2020&#160;SCRCU</string>
+    <string name="register">四川农信®️</string>
+
+
+    <string name="SourceHanSansHeavy">fonts/SourceHanSansCN-Heavy.otf</string>
+    <string name="SourceHanSansLigh">fonts/SourceHanSansCN-Light.otf</string>
+    <string name="SourceHanSansNormal">fonts/SourceHanSansCN-Normal.otf</string>
+    <string name="SourceHanSansRegular">fonts/SourceHanSansCN-Regular.otf</string>
+    <string name="MaterialIcons">fonts/MaterialIcons.ttf</string>
+    <string name="Octicons">fonts/Octicons.ttf</string>
+
+</resources>

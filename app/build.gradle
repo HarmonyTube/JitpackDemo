@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+
+Properties properties = new Properties()
+InputStream inputStream = project.rootProject.file('local.properties').newDataInputStream()
+properties.load(inputStream)
+
+android {
+
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        applicationId "com.dingyizhe.kungfu"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+//        ndk {
+//            //选择要添加的对应cpu类型的.so库。
+//            abiFilters "armeabi", "armeabi-v7a", "x86_64"
+//        }
+        multiDexEnabled true
+        resConfigs "zh"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "CIT_VERSION_CODE", rootProject.ext.build["gitVersionCode"]
+        buildConfigField "String", "CIT_VERSION_NAME", rootProject.ext.build["gitVersionName"]
+        buildConfigField "String", "BUILD_TIME", rootProject.ext.build["buildTime"]
+        buildConfigField "String", "BUILD_INFO", rootProject.ext.build["buildInfo"]
+    }
+
+    //    签名
+    signingConfigs {
+        //配置在本地个人文件local.properties文件中
+        release {
+            storeFile file(properties.getProperty('storeFile'))
+            storePassword properties.getProperty('storePassword')
+            keyAlias = properties.getProperty('keyAlias')
+            keyPassword properties.getProperty('keyPassword')
+            v2SigningEnabled false
+        }
+        //配置在公共文件config/config.gradle文件中
+        debug {
+            storeFile file(rootProject.ext.signingConfigs["storeFile"])
+            storePassword rootProject.ext.signingConfigs["storePassword"]
+            keyAlias = rootProject.ext.signingConfigs["keyAlias"]
+            keyPassword rootProject.ext.signingConfigs["keyPassword"]
+            v2SigningEnabled false
+        }
+    }
+
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true//开启混淆代码
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false//开启混淆代码
+            shrinkResources false
+            zipAlignEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        targetCompatibility rootProject.ext.version["javaVersion"]
+        sourceCompatibility rootProject.ext.version["javaVersion"]
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    //------沉浸式状态栏------------
+//    implementation 'com.jaeger.statusbarutil:library:1.5.1'
+    // 状态栏沉浸：https://github.com/gyf-dev/ImmersionBar
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+//    implementation "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION"
+
+//    implementation rootProject.ext.dependencies["support-v4"]
+//    //support
+    api(rootProject.ext.dependencies["support-v4"]) {
+        exclude module: 'support-annotations'
+    }
+//
+//    api(rootProject.ext.dependencies["butterknife"]) {
+//        exclude module: 'support-annotations'
+//        exclude module: 'support-annotations'
+//        exclude module: 'support-compat'
+//    }
+
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    implementation project(path: ':kftextviewlibrary')
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    implementation 'com.airbnb.android:lottie:3.3.1'
+
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2'  //1.0.5及以前版本的老用户升级需谨慎，API改动过大
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.2'  //没有使用特殊Header，可以不加这行
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.tencent:mmkv:1.2.12'
+
+
+//    //rx
+//    api rootProject.ext.dependencies["rxjava2"]
+//    api(rootProject.ext.dependencies["rxandroid2"]) {
+//        exclude module: 'rxjava'
+//    }
+//    api(rootProject.ext.dependencies["rxcache2"]) {
+//        exclude module: 'rxjava'
+//        exclude module: 'dagger'
+//        exclude module: 'api'
+//    }
+}

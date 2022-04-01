@@ -1,0 +1,108 @@
+<resources>
+
+    <!-- 左右常用边距 -->
+    <dimen name="nine">9dp</dimen>
+    <dimen name="margin">14dp</dimen>
+
+    <dimen name="interval">20dp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+    <dimen name="finder_view_magin_top">50dp</dimen>
+
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="dp_0.2">0.2dp</dimen>
+    <dimen name="dp_0.5">0.5dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_11">11dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_23">23dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_35">35dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_65">65dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_75">75dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_90">90dp</dimen>
+    <dimen name="dp_95">95dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_110">110dp</dimen>
+    <dimen name="dp_115">115dp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+    <dimen name="dp_130">130dp</dimen>
+    <dimen name="dp_137">137dp</dimen>
+    <dimen name="dp_145">145dp</dimen>
+    <dimen name="dp_150">150dp</dimen>
+    <dimen name="dp_160">160dp</dimen>
+    <dimen name="dp_170">170dp</dimen>
+    <dimen name="dp_180">180dp</dimen>
+    <dimen name="dp_200">200dp</dimen>
+    <dimen name="dp_230">230dp</dimen>
+    <dimen name="dp_250">250dp</dimen>
+    <dimen name="dp_270">270dp</dimen>
+    <dimen name="dp_280">280dp</dimen>
+    <dimen name="dp_290">290dp</dimen>
+    <dimen name="dp_300">300dp</dimen>
+    <dimen name="dp_340">340dp</dimen>
+    <dimen name="dp_400">400dp</dimen>
+    <!-- 文本框 距左宽度 -->
+    <dimen name="text_margin_left">136dp</dimen>
+    <!-- content 常用栏高 -->
+    <dimen name="column_content_xian">1px</dimen>
+    <dimen name="column_content_one">0.01dip</dimen>
+    <dimen name="column_content_fortiv">50.0dip</dimen>
+    <dimen name="column_content_height">46.0dip</dimen>
+    <dimen name="column_content_height_high">70.0dip</dimen>
+    <dimen name="column_content_height_high2">100.0dip</dimen>
+    <dimen name="column_content_height_high3">110.0dip</dimen>
+    <dimen name="column_content_height_high4">268.0dip</dimen>
+    <!-- content 常用字体大小 -->
+    <dimen name="bottom_tab_font_size">11sp</dimen>
+    <dimen name="font_content_35">35sp</dimen>
+    <dimen name="font_content_30">30sp</dimen>
+    <dimen name="font_content_25">25sp</dimen>
+    <dimen name="font_content_24">24sp</dimen>
+    <dimen name="font_content_22">22sp</dimen>
+    <dimen name="font_content_20">20sp</dimen>
+    <dimen name="font_content_18">18sp</dimen>
+    <dimen name="font_content_16">16sp</dimen>
+    <dimen name="font_content_15">15sp</dimen>
+    <dimen name="font_content_14">14sp</dimen>
+    <dimen name="font_content_12">12sp</dimen>
+    <dimen name="font_content_10">10sp</dimen>
+    <!-- button 按钮高 -->
+    <dimen name="button_height">45.0dip</dimen>
+    <!-- 离左右间距 -->
+    <dimen name="button_left">43dp</dimen>
+    <dimen name="button_right">43dp</dimen>
+    <!-- topbar 高度 -->
+    <dimen name="topbar_width">48.0dip</dimen>
+    <!-- topbar 主标题字体 -->
+    <dimen name="headline_one">18sp</dimen>
+    <!-- topbar 副标题字体 -->
+    <dimen name="headline_two">14sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+    <!--android:opacity 透明度属性要设置为 opaque（不透明），以防主题转换时发生闪屏的情况-->
+    <!--白色矩形 作为背景色-->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+    <!--log 并且设置下间距-->
+    <!-- <item android:bottom="40dp">
+         &lt;!&ndash;位置设置成靠下&ndash;&gt;
+         <bitmap
+             android:gravity="bottom"
+             android:src="@drawable/splash_logo" />
+     </item>-->
+    <!--单独的slogan图片 并且设置下间距-->
+    <item android:bottom="440dp">
+        <!--位置设置成靠下-->
+        <bitmap
+            android:gravity="bottom"
+            android:src="@drawable/splash_slogan" />
+    </item>
+</layer-list>
