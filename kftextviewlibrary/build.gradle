@@ -36,7 +36,7 @@ afterEvaluate {
 
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.github.HarmonyTube'
-                artifactId = 'kftextview'
+                artifactId = 'JitpackDemo'
                 version = '1.0.5'
             }
             // Creates a Maven publication called “debug”.
@@ -45,7 +45,7 @@ afterEvaluate {
                 from components.debug
 
                 groupId = 'com.github.HarmonyTube'
-                artifactId = 'kftextview'
+                artifactId = 'JitpackDemo'
                 version = '1.0.5'
             }
         }
