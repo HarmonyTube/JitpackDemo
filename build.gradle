@@ -3,7 +3,7 @@ apply from: "config/config.gradle"
 buildscript {
     repositories {
         google()
-        mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.4'
@@ -17,8 +17,8 @@ buildscript {
 allprojects {
     repositories {
         google()
-        mavenCentral()
-        maven { url "https://jitpack.io" }
+        jcenter()
+        maven { url 'https://jitpack.io' }
     }
 }
 
