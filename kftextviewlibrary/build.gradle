@@ -2,7 +2,8 @@ plugins {
     id 'com.android.library'
     id 'com.github.dcendents.android-maven'
 }
-group = 'com.github.kungfubook'
+
+//group = 'com.github.kungfubook'
 
 android {
     compileSdkVersion 31
