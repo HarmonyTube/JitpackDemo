@@ -18,6 +18,7 @@ out/
 # release/
 
 # Gradle files
+.gradle
 .gradle/
 build/
 
@@ -75,6 +76,6 @@ lint/intermediates/
 lint/generated/
 lint/outputs/
 lint/tmp/
-# lint/reports/
-/.idea/
-/.gradle/
+## lint/reports/
+#/.idea/
+#/.gradle/
